@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlsAndRoutes", "UrlsAndRoutes\UrlsAndRoutes.csproj", "{068B9DE9-0291-448F-A99B-B79ACCF3C03F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{068B9DE9-0291-448F-A99B-B79ACCF3C03F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{068B9DE9-0291-448F-A99B-B79ACCF3C03F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{068B9DE9-0291-448F-A99B-B79ACCF3C03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{068B9DE9-0291-448F-A99B-B79ACCF3C03F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3423B1F7-A550-4415-970A-CFA79CF5CF76}
+	EndGlobalSection
+EndGlobal
