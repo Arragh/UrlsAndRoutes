@@ -33,7 +33,14 @@ namespace UrlsAndRoutes
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(null, "{controller}/{action}");
+                // набрав http://localhost:XXXX/Shop/AdminAction попадем на метод Index контроллера Admin
+                endpoints.MapControllerRoute(null, "Shop/AdminAction", defaults: new { controller = "Admin", action = "Index" });
+
+                // набрав http://localhost:XXXX/Shop попадём на метод List контроллера Customer
+                endpoints.MapControllerRoute(null, "Shop/{action=List}", defaults: new { controller = "Customer" });
+
+                endpoints.MapControllerRoute(null, "{controller=Home}/{action=Index}");
+                endpoints.MapControllerRoute(null, "Public/{controller}/{action}");
             });
         }
     }
