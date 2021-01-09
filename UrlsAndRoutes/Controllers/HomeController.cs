@@ -11,11 +11,18 @@ namespace UrlsAndRoutes.Controllers
     {
         public IActionResult Index() => View(nameof(Result), new Result { Controller = nameof(HomeController), Action = nameof(Index) });
 
-        public ViewResult CustomVariable()
+        public ViewResult CustomVariable(string id)
         {
             Result result = new Result { Controller = nameof(HomeController), Action = nameof(CustomVariable) };
-            result.Data["id"] = RouteData.Values["id"];
+            result.Data["id"] = id ?? "<не задано>";
             return View(nameof(Result), result);
         }
+
+        //public ViewResult CustomVariable()
+        //{
+        //    Result result = new Result { Controller = nameof(HomeController), Action = nameof(CustomVariable) };
+        //    result.Data["id"] = RouteData.Values["id"];
+        //    return View(nameof(Result), result);
+        //}
     }
 }

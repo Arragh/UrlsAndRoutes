@@ -42,8 +42,9 @@ namespace UrlsAndRoutes
                 endpoints.MapControllerRoute(null, "Public/{controller}/{action}");
                 */
 
-                endpoints.MapControllerRoute("MyRoute", "{controller=Home}/{action=Index}/{id=DefaultId}");
-                endpoints.MapControllerRoute("TestRoute", "{controller=Home}/{action=Index}/{identify=xaxaxa}");
+                //endpoints.MapControllerRoute("MyRoute", "{controller=Home}/{action=Index}/{id=DefaultId}");
+                //endpoints.MapControllerRoute("MyRoute", "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute("MyRoute", "{controller=Home}/{action=Index}/{id?}/{*catchall}");
             });
         }
     }
